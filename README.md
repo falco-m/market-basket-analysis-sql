@@ -120,8 +120,9 @@ Used SQL window functions (`LAG`, `DATEDIFF`) to calculate interpurchase time an
 - **Recency:** Days since last purchase
 - **Frequency:** Total number of orders
 - **Monetary:** Customer Lifetime Value (LTV)
-
-<img src="visualizations/rfm_customer_distribution.png" width="700">
+<p align="center">
+  <img src="visualizations/rfm_customer_distribution.png" width="700">
+</p>
 *Customer segmentation based on RFM analysis (Recency, Frequency, Monetary value) identifying four behavioral groups: Active, Alert, Churned, and One-Shot customers.*
 
 ### RFM Segment Overview
