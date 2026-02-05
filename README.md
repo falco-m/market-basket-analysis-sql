@@ -266,3 +266,114 @@ uk-retail-analysis/
 ---
 
 *⭐ If this project was helpful, please consider starring the repository!*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# UK Online Retail Analysis: Strategic Product Bundling 🇬🇧
+
+### 📊 Project Snapshot
+| Metric | Value |
+| :--- | :--- |
+| **Goal** | Increase AOV (£477 → £550) & Reduce Churn |
+| **Tools** | **SQL** (Advanced), **Tableau**, RFM Segmentation |
+| **Key Insight** | Bundling strategy can generate **+£878K/year** |
+| **Links** | [📂 SQL Scripts](sql/) • [📈 Tableau Dashboard](https://public.tableau.com/views/Project_17688308344020/Dashboard1?:language=it-IT&:sid=&:display_count=n&:origin=viz_share_link) |
+
+---
+
+## 💡 Executive Summary
+This project analyzes 1 year of B2B transactions (2010-2011) for a UK-based giftware retailer. The objective was to identify cross-selling opportunities to boost the **Average Order Value (AOV)** and segment customers for retention.
+
+**Key Findings:**
+*   **Revenue Concentration:** 50% of customers (Active segment) generate **81% of total revenue** (£7.13M).
+*   **The Opportunity:** Identified two distinct bundling strategies (Volume vs. Premium) estimated to increase annual revenue by **£878K**.
+*   **Customer Behavior:** 50% of orders contain 15+ unique items, validating a strong propensity for "collection buying."
+
+![Product Bundle Quadrant](visualizations/product_bundle_matrix.png)
+*Figure 1: Strategic Bundle Matrix. Top-Right = High Volume Drivers (Cash Cows). Top-Left = High Margin (Premium).*
+
+---
+
+## 🚀 Strategic Recommendations (Action Matrix)
+
+Based on the data, I developed 4 targeted strategies for the marketing and product teams:
+
+| Strategy | Target Segment | Action | Est. Impact |
+| :--- | :--- | :--- | :--- |
+| **1. One-Click Bundles** | All Customers | Pre-package top 20 high-volume pairs (e.g., Jumbo Bags) with a **5% discount**. | **High Volume** (£635K Rev) |
+| **2. Premium Upsell** | "Active" (Top 50%) | Email campaigns for luxury pairs (e.g., Doormats) to high-LTV clients. | **High Margin** (Avg £206/pair) |
+| **3. Volume Tiering** | Cart Value £450-£500 | Gamified shipping tiers: "Add £23 to unlock 5% off & Free Shipping". | **+10% AOV** (£477 → £525) |
+| **4. Win-Back** | "Churned" & "One-Shot" | Re-engagement offer: **15% off** on best-selling volume bundles. | Recover **£1.1M** at risk |
+
+---
+
+## 🔍 Technical Deep Dive (Click to expand)
+
+<details>
+<summary><strong>1. Market Basket Analysis & Product Bundling Logic</strong></summary>
+
+### Methodology
+I analyzed catalog exploration patterns to validate cross-selling:
+*   **Logic:** Basket size refers to **UNIQUE SKUs**. A customer buying 100 units of 1 product = Basket Size 1.
+*   **Finding:** 29.3% of orders contain 10-20 unique items; 22.4% contain 30+. Customers are *already* mentally bundling.
+
+### Bundle Types Identified
+1.  **High-Revenue (Volume):** Top pair (Red Retrospot Bag + Strawberry) generates **£51K** alone. Ideal for homepage merchandising.
+2.  **High-Value (Premium):** Top premium pair averages **£206** (30% higher than volume bundles) but lower frequency. Ideal for targeted sales.
+
+![Basket Size Distribution](visualizations/basket_size_pareto.png)
+</details>
+
+<details>
+<summary><strong>2. Customer Segmentation (RFM Results)</strong></summary>
+
+### Segmentation Logic
+Used SQL to classify 4,334 customers based on Recency, Frequency, and Monetary value.
+
+| Segment | % of Base | Revenue Contribution | Business Priority |
+| :--- | :--- | :--- | :--- |
+| **🟢 Active** | 50.58% | **81.21%** (£7.13M) | **Protect & Upsell** (Premium Bundles) |
+| **⚪ One-Shot** | 34.73% | 7.17% (£629K) | **Reactivate** (Volume Bundles) |
+| **🟡 Churned** | 8.03% | 6.10% (£535K) | **Win-Back** (Discounts) |
+| **🔴 Alert** | 6.67% | 5.51% (£484K) | **Immediate Retention** |
+
+**Key Insight:** The "Alert" segment represents **£484K at immediate risk**. Intervention is required within 48 hours for these accounts.
+</details>
+
+<details>
+<summary><strong>3. Data Cleaning & Assumptions</strong></summary>
+
+*   **Excluded Records:** Transactions with missing CustomerID (~25%) were excluded to ensure accurate RFM calculation.
+*   **Cancellations:** Invoices starting with 'C' were removed (not netted) due to data matching limitations.
+*   **Outliers:** Orders with >50 unique products (<1%) were excluded from Market Basket Analysis to prevent wholesale outliers from skewing co-purchase logic.
+</details>
+
+---
+
+## 🛠️ Repository Structure
+
+```text
+uk-retail-analysis/
+├── data/
+│   ├── online_retail_sample.csv       # 1,000-row sample for GitHub
+│   └── data_dictionary.md             # Column descriptions
+├── sql/
+│   ├── 01_setup_and_cleaning.sql      # Data quality checks & Views
+│   ├── 02_exploratory_analysis.sql    # AOV & Basket size profiling
+│   ├── 03_market_basket_analysis.sql  # Self-Joins for product associations
+│   └── 04_rfm_segmentation.sql        # CTEs for customer lifecycle
+├── visualizations/                    # PNG exports of charts
+└── results/                           # CSV outputs of top bundles
+
