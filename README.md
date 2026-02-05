@@ -23,11 +23,11 @@ As a data analyst supporting this retailer, the **primary objective is to increa
 - **Customer Segmentation (RFM):** Classification of 4,334 customers to identify upselling and retention opportunities
 - **AOV Optimization Strategy:** Targeted recommendations to increase basket value from £477 to £550+ (+15%)
 
-The SQL queries used to inspect and clean the data for this analysis can be found here [sql/01_setup_and_cleaning.sql](sql/01_setup_and_cleaning.sql).
+The SQL queries used to inspect and clean the data for this analysis can be found [here](sql/01_setup_and_cleaning.sql).
 
-Targeted SQL queries regarding various business questions can be found here [sql/](sql/).
+Targeted SQL queries regarding various business questions can be found [here](sql/).
 
-An interactive Tableau dashboard used to report and explore customer segments and product bundles can be found here [on Tableau Public](https://public.tableau.com/views/Project_17688308344020/Dashboard1?:language=it-IT&:sid=&:display_count=n&:origin=viz_share_link).
+An interactive Tableau dashboard used to report and explore customer segments and product bundles can be found [here](https://public.tableau.com/views/Project_17688308344020/Dashboard1?:language=it-IT&:sid=&:display_count=n&:origin=viz_share_link).
 
 ---
 
