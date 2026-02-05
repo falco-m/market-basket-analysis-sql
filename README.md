@@ -27,7 +27,7 @@ The SQL queries used to inspect and clean the data for this analysis can be foun
 
 Targeted SQL queries regarding various business questions can be found here [sql/](sql/).
 
-An interactive Tableau dashboard used to report and explore customer segments and product bundles can be found here [on Tableau Public](https://public.tableau.com/app/profile/yourprofile).
+An interactive Tableau dashboard used to report and explore customer segments and product bundles can be found here [on Tableau Public]([https://public.tableau.com/app/profile/yourprofile](https://public.tableau.com/views/Project_17688308344020/Dashboard1?:language=it-IT&:sid=&:display_count=n&:origin=viz_share_link)).
 
 ---
 
@@ -37,8 +37,8 @@ An interactive Tableau dashboard used to report and explore customer segments an
 
 This analysis identifies **two distinct bundle strategies to increase AOV by 15% (£477 → £550)**, generating an estimated **+£878K in annual revenue**. The first strategy targets **20 high-volume product pairs** (321-430 co-purchases) generating £635K combined revenue, ideal for "One-Click" pre-packaged bundles with volume discounts. The second strategy focuses on **20 premium pairs** with low frequency (101-187 occurrences) but exceptional unit economics (£133-£206 avg pair value), suitable for targeted upselling to high-value customers. Customer segmentation reveals that **50.58% of customers (Active segment) generate 81% of revenue** (£7.13M), while 6.67% are at immediate churn risk (Alert segment, £484K revenue at stake).
 
-![Product Bundle Quadrant](visualizations/product_bundles_quadrant.png)
-*Quadrant analysis showing bundle classification: Top-right = High-Revenue (volume drivers), Top-left = High-Value (premium pairs)*
+![Product Bundle Quadrant](visualizations/product_bundle_matrix.png)
+*Product Bundles Identification: Top-right = High-Revenue (volume drivers), Top-left = High-Value (premium pairs)*
 
 ---
 
