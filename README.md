@@ -31,7 +31,10 @@ An interactive Tableau dashboard used to report and explore customer segments an
 
 ## Executive Summary
 
-This analysis identifies **two distinct bundle strategies to increase AOV by 15% (£477 → £550)**, generating an estimated **+£878K in annual revenue**. The first strategy targets **20 high-volume product pairs** generating £635K combined revenue, ideal for "One-Click" pre-packaged bundles with volume discounts. The second strategy focuses on **20 premium pairs** with low frequency but exceptional unit economics (£133-£206 avg pair value), suitable for targeted upselling to high-value customers. Customer segmentation reveals that **50.58% of customers (Active segment) generate 81% of revenue** (£7.13M), while 6.67% are at immediate churn risk (Alert segment, £484K revenue at stake).
+This analysis identifies **two distinct bundle strategies to increase AOV by 15% (£477 → £550)**, generating an estimated **+£878K in annual revenue**. 
+- The first strategy targets **20 high-volume product pairs** generating £635K combined revenue, ideal for "One-Click" pre-packaged bundles with volume discounts. 
+- The second strategy focuses on **20 premium pairs** with low frequency but exceptional unit economics (£133-£206 avg pair value), suitable for targeted upselling to high-value customers.
+Customer segmentation reveals that **50.58% of customers (Active segment) generate 81% of revenue** (£7.13M), while 6.67% are at immediate churn risk (Alert segment, £484K revenue at stake).
 
 ![Product Bundle Quadrant](visualizations/product_bundle_matrix.png)
 *Product Bundles Identification: Top-right = High-Revenue (volume drivers), Top-left = High-Value (premium pairs)*
