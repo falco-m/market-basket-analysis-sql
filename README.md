@@ -181,7 +181,7 @@ uk-retail-analysis/
 
 ## Contact
 
-**LinkedIn:** [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/falconemichele00/))  
+**LinkedIn:** https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/falconemichele00/
 **Email:** falconemichele4316@gmail.com
 
 *This project demonstrates SQL and data analysis skills for junior data analyst roles. Open to opportunities!*
