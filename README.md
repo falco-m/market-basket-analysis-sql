@@ -59,7 +59,7 @@ Customer segmentation reveals that **50.58% of customers (Active segment) genera
 3. **22.4% of orders (4,127 transactions) contain 30+ unique products**, indicating potential B2B/resellers, party planners, or mega-loyalists. These high-variety customers deserve premium treatment (account managers, wholesale pricing, trade portals).
 
 ![Basket Size Distribution](visualizations/basket_size_pareto.png)
-*Pareto analysis: 80% of orders contain 5-25 products, validating the relevance of bundle strategy for this business*
+*Pareto analysis: 50% of orders contain 15+ unique products, validating the relevance of bundle strategy for this business*
 
 **Key Insight:** The high items-per-order behavior proves customers are ALREADY mentally bundling products (matching collections, complementary designs) - market basket analysis simply formalizes these patterns to make checkout easier and increase AOV.
 
