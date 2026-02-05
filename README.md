@@ -27,31 +27,6 @@ An interactive Tableau dashboard used to report and explore customer segments an
 
 ---
 
-## Data Structure & Initial Checks
-
-The company's transactional database consists of a single fact table with **541,909 initial records** covering December 2010 through December 2011.
-
-**Table: online_retail**
-
-| Column | Data Type | Description |
-|--------|-----------|-------------|
-| InvoiceNo | VARCHAR(20) | Unique 6-digit invoice number (prefix 'C' indicates cancellation) |
-| StockCode | VARCHAR(20) | Unique 5-digit product code |
-| Description | TEXT | Product name/description |
-| Quantity | INT | Number of units per transaction (negative for returns) |
-| InvoiceDate | DATETIME | Invoice date and time |
-| UnitPrice | DECIMAL(10,2) | Price per unit in GBP (£) |
-| CustomerID | INT | Unique 5-digit customer identifier |
-| Country | VARCHAR(50) | Customer's country of residence |
-
-**Data Quality Issues Addressed:**
-- 8,905 cancelled invoices (InvoiceNo prefix 'C') removed
-- Rows with NULL CustomerID excluded 
-- 2,515 rows with £0 UnitPrice filtered out
-- Non-product codes ('POST', 'D', 'M', 'BANK CHARGES', 'CRUK') excluded
-
----
-
 ## Executive Summary
 
 ### Overview of Findings
