@@ -24,7 +24,8 @@ Exploratory analysis revealed a critical insight: **50% of all orders contain 15
 <p align="center">
   <img src="visualizations/product_bundle_matrix.png" width="700">
 </p>
-* Strategic Bundle Classification Matrix: Top-Right = High-Revenue Volume Drivers. Top-Left = High-Value Premium Pairs. *
+*Strategic Bundle Classification Matrix: Top-Right = High-Revenue Volume Drivers. Top-Left = High-Value Premium Pairs.*
+
 
 **Targeting Strategy:**
 Customer segmentation (RFM Analysis) reveals that **50.58% of customers (Active segment)** generate **81% of total revenue** (£7.13M). These customers should receive Premium bundle offers to maximize margin. Meanwhile, the **Alert segment (6.67% of base, £484K revenue at risk)** requires immediate Volume bundle interventions to prevent churn.
