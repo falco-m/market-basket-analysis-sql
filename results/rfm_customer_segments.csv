@@ -1,0 +1,5 @@
+Customer_Segment,Customer_Count,Customer_Percentage,Avg_Lifetime_Value,Avg_num_Orders,Segment_Total_Revenue
+Active,2192,50.58%,"£ 3252.87",6.5,"£ 7130280.76"
+One-Shot,1505,34.73%,"£ 418.34",1.0,"£ 629594.67"
+Churned,348,8.03%,"£ 1539.15",3.6,"£ 535624.92"
+Alert,289,6.67%,"£ 1675.29",4.6,"£ 484158.66"
