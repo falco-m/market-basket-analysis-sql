@@ -12,26 +12,14 @@
 
 ## 💡 Executive Summary
 
-This analysis identifies strategic opportunities to increase revenue by **£878K (+10%)** through data-driven product bundling.
+This analysis identifies **two distinct bundle strategies to increase AOV by 15% (£477 → £550)**, generating an estimated **+£878K in annual revenue**. 
 
 **The Data Driver: Why Bundling?**
 
 Exploratory analysis revealed a critical insight: **50% of all orders contain 15+ unique products** (median basket size). This proves customers are *already* mentally building collections—not just buying individual items. The strategic opportunity is to formalize this behavior through intelligent bundling to reduce friction at checkout and boost Average Order Value.
 
-**The Solution: Creation of 2 different product bundles **
-
-Using SQL Self-Joins on 18,405 transactions, I engineered two distinct bundling strategies based on co-purchase patterns:
-
-1. **High-Revenue "Volume" Bundles (Cash Cows):**  
-   Product pairs with **high co-occurrence frequency** (200-321 times). These drive volume and repeat purchases.  
-   - *Example:* JUMBO BAG RED RETROSPOT + STRAWBERRY appears together 321 times, generating **£50,964 total revenue**.    
-   - *Strategy:* Pre-package as "One-Click" bundles with volume discounts for homepage and checkout merchandising.
-
-2. **High-Value "Premium" Bundles (Profit Drivers):**  
-   Product pairs with **lower frequency but exceptional unit economics** (£133-£206 avg pair value).  
-   - *Example:* DOORMAT NEW ENGLAND + HEARTS averages **£206.50 per pair** despite only 103 co-purchases.  
-   - *Economics:* 30% higher average value than best volume bundle, generating £13K-£29K total revenue per pair.  
-   - *Strategy:* Targeted upselling via personalized email campaigns to high-LTV customer segments.
+- The first strategy targets **20 high-volume product pairs** generating £635K combined revenue, ideal for "One-Click" pre-packaged bundles with volume discounts. 
+- The second strategy focuses on **20 premium pairs** with low frequency but exceptional unit economics (£133-£206 avg pair value), suitable for targeted upselling to high-value customers.
 
 **Targeting Strategy:**
 
@@ -48,9 +36,9 @@ Based on the analysis, I recommend the following actions for the marketing, merc
 
 | Business Goal | Data Insight (The "Why") | Strategic Action (The "What") |
 | :--- | :--- | :--- |
-| **📈 Increase AOV** | **50% of customers buy 15+ products per order. Top 20 product pairs were purchased together 200-321 times each. | **Launch "One-Click Bundles"**: Pre-package top 20 High-Revenue pairs (Jumbo Bags, Regency Teacups) with 5% discount. Feature prominently on homepage carousel and "Frequently Bought Together" section at checkout. |
-| **💰 Maximize Margin** | Premium product pairs are worth 30% more per transaction (£206 avg) than volume bundles (£158 avg). | **Targeted Premium Upsell**: Email campaigns showcasing High-Value pairs (Doormats, Luxury Sets) exclusively to "Active High-Value" segment (top 50% of customer base, £3,252 avg LTV). |
-| **🔄 Prevent Churn** | **289 customers (6.7% of base) are showing signs of inactivity. They represent £484K in at-risk revenue. | **Proactive Win-Back Campaign**: Send automated "Complete the Set" bundle offers within 48 hours of inactivity trigger. Offer 15% discount on previously purchased product collections with 7-day urgency timer. |
+| **📈 Increase AOV** | 50% of customers buy 15+ products per order. Top 20 product pairs were purchased together 200-321 times each. | **Launch "One-Click Bundles"**: Pre-package top 20 High-Revenue pairs (Jumbo Bags, Regency Teacups) with 5% discount. Feature prominently on homepage carousel and "Frequently Bought Together" section at checkout. |
+| **💰 Maximize Margin** | Premium product pairs are worth 30% more per transaction (£206 avg) than volume bundles (£158 avg). | **Targeted Premium Upsell**: Email campaigns showcasing High-Value pairs exclusively to "Active High-Value" segment (top 50% of customer base, £3,252 avg LTV). |
+| **🔄 Prevent Churn** | 289 customers (6.7% of base) are showing signs of inactivity. They represent £484K in at-risk revenue. | **Proactive Win-Back Campaign**: Send automated "Complete the Set" bundle offers within 48 hours of inactivity trigger. Offer 15% discount on previously purchased product collections with 7-day urgency timer. |
 
 ---
 
