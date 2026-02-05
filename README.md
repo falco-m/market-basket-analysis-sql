@@ -33,7 +33,7 @@ An interactive Tableau dashboard used to report and explore customer segments an
 
 The analysis reveals significant untapped revenue potential in product bundling and customer retention. **20 strategic product pairs generate £636K in combined revenue (7.24% of total sales)** from just 5,909 transactions, indicating strong cross-selling opportunities. However, **25% of customers are at risk of churning** (30-60 days since last order), and **20% have already churned** (>90 days inactive), representing £175K in recoverable revenue. The data confirms a B2B/wholesale model with an average basket size of 21 products and AOV of £477, requiring bulk-focused retention strategies rather than traditional consumer marketing.
 
-![Product Bundle Mattrix](visualizations/product_bundle_matrix.png)
+![RFM distribution](visualizations/rfm_customer_distribution.png)
 *Customer segmentation showing concentration of revenue in top-right quadrant (high recency + high frequency)*
 
 ---
