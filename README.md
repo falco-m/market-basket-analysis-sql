@@ -4,15 +4,13 @@
 
 This project analyzes a UK-based online retailer specializing in unique all-occasion giftware, operating primarily in the B2B/wholesale market from 2010-2011. The business model focuses on bulk orders to small retailers and gift shops across multiple countries.
 
-**Note:** This is a portfolio project using publicly available data from the UCI Machine Learning Repository. The analysis demonstrates skills in SQL, data cleaning, and business intelligence applicable to real-world retail scenarios.
-
 **Key business metrics:**
 - Average Order Value (AOV): £477
 - Customer Lifetime Value: £2,025
 - Average items per order: 21 products
 - Active customer base: 4,334 accounts
 
-As a data analyst supporting this retailer, the goal is to optimize revenue through strategic product recommendations and reduce customer churn through proactive segmentation.
+The goal is to optimize revenue through strategic product recommendations and reduce customer churn through proactive segmentation.
 
 **Insights and recommendations are provided on the following key areas:**
 
@@ -31,7 +29,7 @@ An interactive Tableau dashboard used to report and explore customer segments an
 
 ## Data Structure & Initial Checks
 
-The company's transactional database consists of a single fact table with **541,909 initial records** covering December 2010 through December 2011. After data cleaning, the analysis focuses on **397,884 validated transactions**.
+The company's transactional database consists of a single fact table with **541,909 initial records** covering December 2010 through December 2011.
 
 **Table: online_retail**
 
@@ -48,18 +46,9 @@ The company's transactional database consists of a single fact table with **541,
 
 **Data Quality Issues Addressed:**
 - 8,905 cancelled invoices (InvoiceNo prefix 'C') removed
-- 135,080 rows with NULL CustomerID excluded (25% of raw data)
+- Rows with NULL CustomerID excluded 
 - 2,515 rows with £0 UnitPrice filtered out
 - Non-product codes ('POST', 'D', 'M', 'BANK CHARGES', 'CRUK') excluded
-
-**Entity Relationship Diagram:**
-
-```
-online_retail (Fact Table)
-├── InvoiceNo (PK) → Groups products within same transaction
-├── CustomerID (FK) → Links to customer entity
-└── StockCode (FK) → Links to product catalog
-```
 
 ---
 
@@ -149,24 +138,6 @@ Based on the insights and findings above, we would recommend the **marketing and
 
 ---
 
-## Assumptions and Caveats
-
-Throughout the analysis, multiple assumptions were made to manage challenges with the data. These assumptions and caveats are noted below:
-
-1. **Cancelled invoices (prefix 'C') were excluded entirely** rather than netted against original orders, as matching cancelled invoices to originals was not feasible without additional business logic. This may slightly overstate total revenue if some cancellations are missing.
-
-2. **Rows with NULL CustomerID (25% of data) were removed from customer-level analysis** but included in product-level analysis (market basket). These represent guest checkouts or data quality issues. Customer metrics (LTV, churn rate) reflect only identified customers.
-
-3. **Interpurchase time calculations exclude the first order** for each customer, as there is no "previous order" to compare. This may underestimate churn risk for customers acquired late in the dataset (Nov-Dec 2011).
-
-4. **Orders with >50 unique products (outliers) were excluded from market basket analysis**, as these likely represent bulk wholesale orders with different purchasing logic. This affects <1% of transactions but prevents skewing of co-purchase frequencies.
-
-5. **Churn thresholds (90 days) are based on dataset patterns** rather than business-defined rules. Actual churn definition may vary by customer segment or product category and should be validated with business stakeholders.
-
-6. **Currency conversion rates are not available**, so international customer analysis assumes GBP values are directly comparable. Exchange rate fluctuations during 2010-2011 may affect actual revenue contribution by country.
-
----
-
 ## Repository Structure
 
 ```
@@ -204,16 +175,14 @@ uk-retail-analysis/
 ## Data Source
 
 **Dataset:** UCI Machine Learning Repository - Online Retail Dataset  
-**Citation:** Daqing Chen, Sai Liang Sain, and Kun Guo. *Data Mining for the Online Retail Industry: A Case Study of RFM Model-Based Customer Segmentation Using Data Mining.* Journal of Database Marketing and Customer Strategy Management, 2012.  
-**License:** [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)  
 **Link:** https://archive.ics.uci.edu/ml/datasets/online+retail
 
 ---
 
 ## Contact
 
-**LinkedIn:** [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-**Email:** your.email@example.com
+**LinkedIn:** [linkedin.com/in/yourprofile]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/falconemichele00/))  
+**Email:** falconemichele4316@gmail.com
 
 *This project demonstrates SQL and data analysis skills for junior data analyst roles. Open to opportunities!*
 
