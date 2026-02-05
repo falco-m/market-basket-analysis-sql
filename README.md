@@ -24,6 +24,7 @@ Exploratory analysis revealed a critical insight: **50% of all orders contain 15
 <p align="center">
   <img src="visualizations/product_bundle_matrix.png" width="700">
 </p>
+
 *Strategic Bundle Classification Matrix: Top-Right = High-Revenue Volume Drivers. Top-Left = High-Value Premium Pairs.*
 
 
@@ -126,6 +127,7 @@ Used SQL window functions (`LAG`, `DATEDIFF`) to calculate interpurchase time an
 <p align="center">
   <img src="visualizations/rfm_customer_distribution.png" width="700">
 </p>
+
 *Customer segmentation based on RFM analysis (Recency, Frequency, Monetary value) identifying four behavioral groups: Active, Alert, Churned, and One-Shot customers.*
 
 ### RFM Segment Overview
