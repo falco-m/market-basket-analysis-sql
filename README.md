@@ -27,7 +27,7 @@ The SQL queries used to inspect and clean the data for this analysis can be foun
 
 Targeted SQL queries regarding various business questions can be found here [sql/](sql/).
 
-An interactive Tableau dashboard used to report and explore customer segments and product bundles can be found here [on Tableau Public]([https://public.tableau.com/app/profile/yourprofile](https://public.tableau.com/views/Project_17688308344020/Dashboard1?:language=it-IT&:sid=&:display_count=n&:origin=viz_share_link)).
+An interactive Tableau dashboard used to report and explore customer segments and product bundles can be found here [on Tableau Public](https://public.tableau.com/views/Project_17688308344020/Dashboard1?:language=it-IT&:sid=&:display_count=n&:origin=viz_share_link).
 
 ---
 
