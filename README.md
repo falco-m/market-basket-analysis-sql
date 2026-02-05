@@ -21,14 +21,14 @@ Exploratory analysis revealed a critical insight: **50% of all orders contain 15
 - The first strategy targets **20 high-volume product pairs** generating £635K combined revenue, ideal for "One-Click" pre-packaged bundles with volume discounts. 
 - The second strategy focuses on **20 premium pairs** with low frequency but exceptional unit economics (£133-£206 avg pair value), suitable for targeted upselling to high-value customers.
 
-**Targeting Strategy:**
-
-Customer segmentation (RFM Analysis) reveals that **50.58% of customers (Active segment)** generate **81% of total revenue** (£7.13M). These customers should receive Premium bundle offers to maximize margin. Meanwhile, the **Alert segment (6.67% of base, £484K revenue at risk)** requires immediate Volume bundle interventions to prevent churn.
-
 <p align="center">
   <img src="visualizations/product_bundle_matrix.png" width="700">
 </p>
-*Strategic Bundle Classification Matrix: Top-Right = High-Revenue Volume Drivers. Top-Left = High-Value Premium Pairs.*
+* Strategic Bundle Classification Matrix: Top-Right = High-Revenue Volume Drivers. Top-Left = High-Value Premium Pairs. *
+
+**Targeting Strategy:**
+Customer segmentation (RFM Analysis) reveals that **50.58% of customers (Active segment)** generate **81% of total revenue** (£7.13M). These customers should receive Premium bundle offers to maximize margin. Meanwhile, the **Alert segment (6.67% of base, £484K revenue at risk)** requires immediate Volume bundle interventions to prevent churn.
+
 
 ---
 
