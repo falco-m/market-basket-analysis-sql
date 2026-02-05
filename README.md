@@ -121,6 +121,10 @@ Used SQL window functions (`LAG`, `DATEDIFF`) to calculate interpurchase time an
 - **Frequency:** Total number of orders
 - **Monetary:** Customer Lifetime Value (LTV)
 
+![RFM Customer Distribution](visualizations/rfm_customer_segmentation.png)
+*Customer segmentation based on RFM analysis (Recency, Frequency, Monetary value) identifying four behavioral groups: Active, Alert, Churned, and One-Shot customers.*
+
+
 ### RFM Segment Overview
 
 | Segment | Customers | % of Base | Avg LTV | Avg Orders | Total Revenue | % Revenue | Priority Action |
